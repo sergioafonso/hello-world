@@ -1,0 +1,30 @@
+{
+    "namespace": "common.avro.schemas",
+    "type": "record",
+    "name": "Log",
+    "fields": [
+        {"name": "id_execution", "type": "string", "default": ""},
+        {"name": "telemetry", "type":
+        	{
+            	"type": "record",
+            	"name": "Telemetry",
+                "fields": [
+                    {"name": "desc_level",         "type": "string", "default": ""},
+                    {"name": "desc_operation",     "type": "string", "default": ""},
+                    {"name": "dt_information",     "type": "string", "default": ""},
+                    {"name": "dt_start",           "type": "string", "default": ""},
+                    {"name": "dt_end",             "type": "string", "default": ""},
+                    {"name": "dt_start_execution", "type": "string", "default": ""},
+                    {"name": "dt_end_execution",   "type": "string", "default": ""},
+                    {"name": "tm_execution",       "type": "string", "default": ""},
+                    {"name": "id_source",          "type": "string", "default": ""},
+                    {"name": "desc_source",        "type": "string", "default": ""},
+                    {"name": "id_destination",     "type": "string", "default": ""},
+                    {"name": "desc_destination",   "type": "string", "default": ""},
+                    {"name": "num_rowsbefore",     "type": "string", "default": ""},
+                    {"name": "num_rowsafter",      "type": "string", "default": ""}
+                ]
+			}
+        }
+    ]
+}
